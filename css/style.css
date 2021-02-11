@@ -1,0 +1,280 @@
+body * {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar{
+  width: 18px;
+}
+
+::-webkit-scrollbar-track{
+  border-radius: 25px;
+    box-shadow: inset 1px 1px 8px 1px grey;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,cyan ,cyan);
+    border-radius: 25px;
+    box-shadow: none;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, #51d5a0 , #51d5a0);
+    border-radius: 25px;
+    box-shadow: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 15px;
+}
+
+.nav-background {
+  width: 100%;
+  background-color: #333b40;
+  padding: 1rem 0 1rem 0;
+}
+
+.center {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flow-root;
+}
+
+.nav-left {
+  width: 40%;
+  float: left;
+}
+.nav-left a img {
+  width: 60%;
+}
+.nav-right {
+  width: 40%;
+  float: right;
+}
+
+.nav-right ul {
+  display: flow-root;
+  position: relative;
+  bottom: -0.4rem;
+}
+.nav-right ul > li {
+  float: left;
+  margin-left: 1.2rem;
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+.nav-right ul > li a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-right ul li a:hover {
+  color: #cad61c;
+}
+
+.center > span {
+  font-size: 2rem;
+  color: #fff;
+  float: right;
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .center {
+    margin: 0 1rem 0 1rem;
+  }
+  .nav-left a  img {
+    width: 80%;
+  }
+  .nav-right ul {
+    display: none;
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    top: 5%;
+    left: 0;
+    background-color: #333b40;
+    border-radius: 25px;
+    box-shadow: 7px 7px 7px #cad61c;
+  }
+  .nav-right ul > li {
+    clear: both;
+    font-size: 3rem;
+    border top: 1px solid #fff ;
+  }
+  .center span {
+    display: block;
+  }
+}
+@media only screen and (max-width: 700px) {
+
+  .nav-right ul {
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+
+  }
+  .nav-right ul > li {
+    font-size: 2.5rem;
+    border top: 1px solid #fff ;
+  }
+  .center span {
+    display: block;
+  }
+}
+
+
+/* crousal */
+
+#banner .owl-dots{
+    display: none !important;
+}
+
+#banner .background-f{
+    width: calc(100vw - 3px);
+    height: calc(100vh - 3vh);
+   background-image: url("../img/Background.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+#banner .background-f .under-f{
+  position: relative;
+  top: 35%;
+  left: 60%;
+}
+
+#banner .background-s .under-s{
+  position: relative;
+  top: 35%;
+  left: 60%;
+}
+#banner .background-t .under-t{
+  position: relative;
+  top: 35%;
+  left: 60%;
+}
+
+#banner .background-fo .under-fo{
+  position: relative;
+  top: 35%;
+  left: 60%;
+}
+
+#banner .background-s{
+    width: calc(100vw - 3px);
+    height: calc(100vh - 3vh);
+   background-image: url("../img/2nd.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+#banner .background-t{
+    width: calc(100vw - 3px);
+    height: calc(100vh - 3vh);
+   background-image: url("../img/3rd.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+#banner .background-fo{
+    width: calc(100vw - 3px);
+    height: calc(100vh - 3vh);
+   background-image: url("../img/4th.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+#banner .change{
+   padding: 2rem 1rem;
+   backdrop-filter: blur(7px);
+   border-radius: 25px;
+   border: 1px solid #1dcecc;
+}
+
+#banner .change h1{
+     font-weight: 400;
+     color: #cad61c;
+     margin-bottom: 0.8rem;
+}
+
+#banner .change h4{
+     font-weight:300;
+     margin-bottom: 1rem;
+     color: #3f4141;
+}
+
+#banner .change button{
+     background-color: #1dcecc;
+     outline: none;
+     border: 0;
+     font-size: 1rem;
+     color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+  #banner .background-f .under-f{
+    text-align: center;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+  #banner .background-s .under-s{
+    text-align: center;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+  #banner .background-t .under-t{
+    text-align: center;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+  #banner .background-fo .under-fo{
+    text-align: center;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+}
+
+/* complete banner  */
+
+.main-2 .container .row h3{
+  margin-top: 2rem;
+}
+
+#products .section .img img{
+  width: 100%;
+}
+
+#products .section .content *{
+  text-align: center;
+  margin: 1rem;
+}
+
+#products .section{
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin: 1.5rem;
+  border: 1px solid #7c8080;
+  padding: 1rem;
+}
+
+#products .section .content p{
+   font-size: 1rem;
+}
+#products .section .content button{
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  background: transparent;
+  border: 1px solid #1dcecc;
+  outline: none;
+}
